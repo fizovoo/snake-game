@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&displa=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+body {
+    background-image: url(snakes.jpg);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+
+}
+
+.wrapper {
+    width: 90vmin;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background: #1b2471
+}
+
+.game-specifications {
+    background-image: radial-gradient(circle 759px at -6.7% 50%, rgba(80, 131, 73, 1) 0%, rgba(140, 209, 131, 1) 26.2%, rgba(178, 231, 170, 1) 50.6%, rgba(144, 213, 135, 1) 74.1%, rgba(75, 118, 69, 1) 100.3%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.play-space {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: rgb(0, 0, 0)
+}
+
+.play-space .food {
+    background: #df0808;
+    border-radius: 15px;
+
+}
+
+.play-space .head {
+    background: #79b12e;
+    border-radius: 5px;
+
+}
+
+.controls {
+    background-image: radial-gradient(circle 759px at -6.7% 50%, rgba(80, 131, 73, 1) 0%, rgba(140, 209, 131, 1) 26.2%, rgba(178, 231, 170, 1) 50.6%, rgba(144, 213, 135, 1) 74.1%, rgba(75, 118, 69, 1) 100.3%);
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i {
+    padding: 25px 0;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100% / 4);
+    border: 1px solid #000000;
+
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .game-specifications {
+        font-size: 1rem;
+        padding: 15px 27px;
+
+    }
+
+    .controls {
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+
+
+}
+
+#start-screen button {
+    border: none;
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    font-size: 1.8em;
+    background-image: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #f5f5f5;
+    padding: 14px;
+    cursor: pointer;
+}
+
+#start-screen button:hover {
+    background-image: linear-gradient(to right, #00b4db, #0083b0);
+}
